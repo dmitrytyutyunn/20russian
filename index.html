@@ -3,217 +3,43 @@
  <head>
   <meta charset="utf-8">
   <title>20 hours of russian with Dmitry and Egor</title>
-	<link href="styles.css" rel="stylesheet"/>
+	<link href="css/styles.css" rel="stylesheet"/>
  </head>
  <body>
-<h1 id="foreignword" style="text-align: center; width:100%">Übung macht den Meister</h1>
+<h1 id="foreignword" style="text-align: center; width:100%; font-size: 64px;">Übung macht den Meister</h1>
   <table border="1">
    <tr>
     <td style="width:15%">    
     <div class="btn-group">
-	   <button type="button" id="button1" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 1</button>
-	   <button type="button" id="button2" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 2</button>
-	   <button type="button" id="button3" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 3</button>
-	   <button type="button" id="button4" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 4</button>
-	   <button type="button" id="button5" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 5</button>
-	   <button type="button" id="button6" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 6</button>
-	   <button type="button" id="button7" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 7</button>
-	   <button type="button" id="button8" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 8</button>
-	   <button type="button" id="button9" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 9</button>
-	   <button type="button" id="button10" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 10</button>
-	   <button type="button" id="button11" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 11</button>
-	   <button type="button" id="button12" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 12</button>
-	   <button type="button" id="button13" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 13</button>
-	   <button type="button" id="button14" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 14</button>
-	   <button type="button" id="button15" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 15</button>
-	   <button type="button" id="button16" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 16</button>
-	   <button type="button" id="button17" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 17</button>
-	   <button type="button" id="button18" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 18</button>
-	   <button type="button" id="button19" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 19</button>
-	   <button type="button" id="button20" style="font-size:40px;width:100%" onclick="makechoice(this.id)" enabled>Hour 20</button>
+	   <button type="button" id="button1" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 1</button>
+	   <button type="button" id="button2" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 2</button>
+	   <button type="button" id="button3" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 3</button>
+	   <button type="button" id="button4" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 4</button>
+	   <button type="button" id="button5" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 5</button>
+	   <button type="button" id="button6" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 6</button>
+	   <button type="button" id="button7" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 7</button>
+	   <button type="button" id="button8" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 8</button>
+	   <button type="button" id="button9" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 9</button>
+	   <button type="button" id="button10" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 10</button>
+	   <button type="button" id="button11" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 11</button>
+	   <button type="button" id="button12" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 12</button>
+	   <button type="button" id="button13" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 13</button>
+	   <button type="button" id="button14" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 14</button>
+	   <button type="button" id="button15" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 15</button>
+	   <button type="button" id="button16" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 16</button>
+	   <button type="button" id="button17" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 17</button>
+	   <button type="button" id="button18" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 18</button>
+	   <button type="button" id="button19" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 19</button>
+	   <button type="button" id="button20" style="font-size:40px;width:100%" onclick="chooseLesson(this.id)" enabled>Hour 20</button>
 	</div></td>
-    <td style="width:80%"><p>This platform introduces the material which will enable you to learn basic structures of the Russian language. This platform is based on the technique of 20 hours. This technique was developed in order to guarantee the efficient diving into the Russian language. The key element of this platform is the memorization hints for russian words. Just press the russian word and you will see it. </p>
-<p>
-Besides there are different applications which will enable you to check your vocabulary and also to polish grammatical structures. We did our best in order to make your learning process as enjoable as possible. 
-</p>
-<p>
-Dmitry and Egor
-</p>
-<h1 id="foreignword" style="text-align: center; width:100%">Alphabet</h1>
-<table border="1">
-	<tr>
-		<td>Letter</td>
-		<td>Example of use</td>
-		<td>English equivalent</td>
-	</tr>
-	<tr>
-		<td>Aа</td>
-		<td><a href="#" class="hint  hint--top" data-hint="MACHINE">машина</a></td>
-		<td>ark</td>
-	</tr>
-	<tr>
-		<td>Бб</td>
-		<td><a href="#" class="hint  hint--top" data-hint="The place, where the bear lays. BEaR + LOG (piece of trunk laying on the ground.)">берлога</a></td>
-		<td>bone</td>
-	</tr>
-	<tr>
-		<td>Вв</td>
-		<td><a href="#" class="hint  hint--top" data-hint="It is a propeller, which is used to generate WIND.">винт</a></td>
-		<td>view</td>
-	</tr>
-	<tr>
-		<td>Гг</td>
-		<td>Гитара</td>
-		<td>gun</td>
-	</tr>
-	<tr>
-		<td>Дд</td>
-		<td>Дельфин</td>
-		<td>dinner</td>
-	</tr>
-	<tr>
-		<td>Ее</td>
-		<td>Енот</td>
-		<td>women</td>
-	</tr>
-	<tr>
-		<td>Ёё</td>
-		<td>ёж</td>
-		<td>earn</td>
-	</tr>
-	<tr>
-		<td>Жж</td>
-		<td>жизнь</td>
-		<td>treasure</td>
-	</tr>
-	<tr>
-		<td>Зз</td>
-		<td>заря</td>
-		<td>zoo</td>
-	</tr>
-	<tr>
-		<td>Ии</td>
-		<td>игла</td>
-		<td>if</td>
-	</tr>
-	<tr>
-		<td>Ий</td>
-		<td>твой</td>
-		<td>my</td>
-	</tr>
-	<tr>
-		<td>Кк</td>
-		<td>Кот</td>
-		<td>kind</td>
-	</tr>
-	<tr>
-		<td>Лл</td>
-		<td>лес</td>
-		<td>lay</td>
-	</tr>
-	<tr>
-		<td>Мм</td>
-		<td>мера</td>
-		<td>measure</td>
-	</tr>
-	<tr>
-		<td>Нн</td>
-		<td>нет</td>
-		<td>knife</td>
-	</tr>
-	<tr>
-		<td>Оо</td>
-		<td>око</td>
-		<td>ornament</td>
-	</tr>
-	<tr>
-		<td>Пп</td>
-		<td>пекарь</td>
-		<td>pot</td>
-	</tr>
-	<tr>
-		<td>Рр</td>
-		<td>рыть</td>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>Cc</td>
-		<td>сказать</td>
-		<td>say</td>
-	</tr>
-	<tr>
-		<td>Тт</td>
-		<td>территория</td>
-		<td>temple</td>
-	</tr>
-	<tr>
-		<td>Уу</td>
-		<td>ум</td>
-		<td>room</td>
-	</tr>
-	<tr>
-		<td>Фф</td>
-		<td>фон</td>
-		<td>famous</td>
-	</tr>
-	<tr>
-		<td>Хх</td>
-		<td>хозяин</td>
-		<td>hello</td>
-	</tr>
-	<tr>
-		<td>Цц</td>
-		<td>цирк</td>
-		<td>pizza</td>
-	</tr>
-	<tr>
-		<td>Чч</td>
-		<td>чин</td>
-		<td>bone</td>
-	</tr>
-	<tr>
-		<td>Шш</td>
-		<td>шерсть</td>
-		<td>wish</td>
-	</tr>
-	<tr>
-		<td>Щщ</td>
-		<td>щука</td>
-		<td>shchi</td>
-	</tr>
-	<tr>
-		<td>ъ</td>
-		<td>съём</td>
-		<td>indicates the hardness of the previous consonant</td>
-	</tr>
-	<tr>
-		<td>ы</td>
-		<td>сыр</td>
-		<td>pronounced as и but keeping the previous consonant hard</td>
-	</tr>
-	<tr>
-		<td>ь</td>
-		<td>семья</td>
-		<td>bone</td>
-	</tr>
-	<tr>
-		<td>Ээ</td>
-		<td>эра</td>
-		<td>ten</td>
-	</tr>
-	<tr>
-		<td>Юю</td>
-		<td>каюта</td>
-		<td>youth, after the consonant glue</td>
-	</tr>
-	<tr>
-		<td>Яя</td>
-		<td>яркость</td>
-		<td>yard, after a consonant - ciao</td>
-	</tr>
-</table>
-</td>
+    <td style="width:80%">
+	<iframe id="FrameOfLesson" style="width:100%;height:1000px;border:none;" src="hour1.html"></iframe>
+	<button type="button" id="checkVocabulary" style="font-size:32px;width:30%" onclick="checkVocabulary()" enabled>Check your Russian vocabulary</button>  
+	<button type="button" id="checkVocabulary" style="font-size:32px;width:30%" onclick="playWordSnatches()" enabled>Play Russian Word Snatches</button> 
+	<button type="button" id="checkVocabulary" style="font-size:32px;width:30%" onclick="checkProgress()" enabled>Check your progress in Russian</button>  
+    </td>
   </tr>
  </table>
+	<script src="js/scripts.js"></script>
  </body>
 </html>
